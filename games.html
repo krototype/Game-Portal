@@ -1,0 +1,44 @@
+<html>
+<head>
+  <title>The Game</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="script.js"></script>
+</head>
+<body>
+  <img src = 'background.jpg' id = 'back_image'>
+  <h1 id="pageTop" >Game Portal</h1>
+  <div id = "navigation">
+    <input type = "text" id = "searchBar" onkeyup = "searchDisplay()">
+    <ul id = "searchResult">
+    </ul>
+    <button id = "searchButton" onclick = "searchSingleGame()"><img src = "search.png"></button>
+    <button id = "filterButton" onclick="filterPress()">Filter</button>
+    <div id = "filterResult">
+      <div id = "platformFilter">
+      </div>
+      <div id = "releaseFilter">
+      </div>
+      <div id = "genreFilter">
+      </div>
+      <div id = "scoreFilter">
+        <div class = "filterHeading">Score</div><br>
+        <div class="scoreCheck"><input type="radio" name="scoreCheck" value="ascending">Ascending</div>
+        <div class="scoreCheck"><input type="radio" name="scoreCheck" value="descending">Descending</div>
+        <div class="scoreCheck"><input type="radio" name="scoreCheck" value="random" checked>Random</div>
+      </div>
+      <div id = "editorFilter">
+        <div class = "filterHeading">Editors_choice</div><br>
+        <div class="editorCheck"><input type="radio" name="editorCheck" value="Y">Yes</div>
+        <div class="editorCheck"><input type="radio" name="editorCheck" value="N">No</div>
+        <div class="editorCheck"><input type="radio" name="editorCheck" value="both" checked>Both</div>
+      </div>
+      <button id = "filterApply" onclick = "filterApply()">Apply</button>
+      <button id = "filterClose" onclick = "filterClose()">Close</button>
+    </div>
+  </div>
+  <div id = "gameSection">
+
+  </div>
+</body>
+</html>

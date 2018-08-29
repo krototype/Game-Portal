@@ -1,0 +1,193 @@
+body {
+  margin: 0%;
+}
+
+#gameSection {
+  background-image: url("background.jpg");
+  background-attachment: fixed;
+}
+
+.gameBox {
+  height: 20%;
+  width: 40%;
+  float: left;
+  background-color: #f1eaaccf;
+  border-radius: 4%;
+  margin: 2.5%;
+  border-style: solid;
+  border-color: black;
+  padding: 2%;
+}
+
+.gameIcon {
+  width: 13%;
+  float: left;
+  margin: 0%;
+}
+
+.gameTitle {
+  text-align: center;
+  margin: 0%;
+  width: 96%;
+  height: 33%;
+}
+
+.gamePlatform {
+  text-align: center;
+  margin: 0%;
+}
+
+.gameGenre {
+  text-align: left;
+  display: inline;
+  white-space: nowrap;
+}
+
+.gameScore {
+  text-align: right;
+  display: inline;
+  float: right;
+}
+
+.editorChoice {
+  float: right;
+  display: inline;
+  white-space: nowrap;
+}
+
+#navigation {
+  margin: 2% 0%;
+}
+
+#searchBar {
+  text-align: center;
+  width: 50%;
+  margin: 0% 25%;
+  height: 8%;
+}
+
+#searchButton {
+  width: 10%;
+  height: 6%;
+  margin: 1% 5% 1% 32%;
+  float: left;
+}
+
+#filterButton {
+  width: 10%;
+  height: 6%;
+  margin: 1% 32% 1% 5%;
+  float: left;
+}
+
+#searchResult {
+  position: absolute;
+    z-index: 1;
+    list-style-type: none;
+    padding: 0;
+    margin: 5% 25%;
+    width: 50%;
+}
+
+#searchResult li a {
+  border: 1px solid #ddd;
+  background-color: #f6f6f6;
+  padding: 12px;
+  text-decoration: none;
+  font-size: 15px;
+  color: black;
+  display: block;
+  width: 100%;
+}
+
+#searchResult li a:hover:not(.header) {
+  background-color: #eee;
+}
+
+a.gameLink {
+  color: black;
+}
+
+#back_image {
+  position: fixed;
+  z-index: -2;
+  width: 100%;
+  height: 100%;
+}
+
+h1 {
+  color: #e6d8d8d1;
+  text-align: center;
+}
+
+#filterResult {
+  position: absolute;
+  z-index: 1;
+  color: white;
+  margin: 5% 5%;
+  background-color: #5f5f63de;
+  width: 90%;
+  height: 56%;
+  visibility: hidden;
+}
+
+#platformFilter {
+  width: 30%;
+  float: left;
+  height: 100%;
+}
+
+.platformCheck {
+  float: left;
+  width: 50%;
+}
+
+#releaseFilter {
+  width: 10%;
+  float: left;
+  height: 100%;
+}
+
+#genreFilter {
+  width: 30%;
+  float: left;
+  height: 100%;
+}
+
+.genreCheck {
+  width: 50%;
+  float: left;
+}
+
+#scoreFilter {
+  width: 15%;
+  float: left;
+  height: 75%;
+}
+
+.scoreCheck {
+  width: 100%;
+}
+
+#editorFilter {
+  width: 15%;
+  float: left;
+  height: 75%;
+}
+
+.editorCheck {
+  width: 100%;
+}
+
+.filterHeading {
+  text-align: left;
+  font-weight: bold;
+}
+
+#filterApply {
+  margin:5%;
+}
+
+#filterClose {
+  margin: 5%;
+}

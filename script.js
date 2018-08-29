@@ -27,6 +27,7 @@ $(document).ready(function(){
       }
       popFilter();
       printWhole();
+      document.getElementById("loading").style.visibility = "hidden";
 
   });
 

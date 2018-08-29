@@ -318,7 +318,6 @@ function filterApply() {
     if(checkboxes[i].checked)
     {
       checkMap.set(genreArr[i],1);
-      checkEmpty = 1;
     }
     else{
       checkMap.set(genreArr[i],0);
@@ -334,9 +333,17 @@ function filterApply() {
       {
         if(difgenre[k].trim() == genreArr[j] && checkMap.get(genreArr[j]) == 1)
         {
+          if(dataVis[i] == 1 || checkEmpty == 0)
           dataVis[i] = 1;
         }
       }
+    }
+  }
+  for(i = 0;i<checkboxes.length;i++)
+  {
+    if(checkboxes[i].checked)
+    {
+      checkEmpty = 1;
     }
   }
 
@@ -347,7 +354,6 @@ function filterApply() {
     if(checkboxes[i].checked)
     {
       checkMap.set(releaseArr[i],1);
-      checkEmpty = 1;
     }
     else{
       checkMap.set(releaseArr[i],0);
@@ -359,8 +365,16 @@ function filterApply() {
     {
       if(originalData[i].release_year == releaseArr[j] && checkMap.get(releaseArr[j]) == 1)
       {
+        if(dataVis[i] == 1 || checkEmpty == 0)
         dataVis[i] = 1;
       }
+    }
+  }
+  for(i = 0;i<checkboxes.length;i++)
+  {
+    if(checkboxes[i].checked)
+    {
+      checkEmpty = 1;
     }
   }
   var checkboxes=document.getElementById("editorFilter").getElementsByTagName("input");
